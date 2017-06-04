@@ -1,0 +1,41 @@
+<meta charset="utf-8" />
+<!-- Adds "PT Sans Narrow" Google Font -->
+<link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+<!-- Adds Font Awesome -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+<div class="container text-center">
+  <div class="row">
+
+    <div class="col-md-9" id="clock_interface">
+      <div id="status"></div>
+      <!-- Image from https://www.iconfinder.com/icons/678199/alarm_alert_clock_timer_icon#size=512 -->
+      
+    <div class="clock" onclick=start()>
+      <div class="clock-face">
+        <div class="hand hour-hand" ></div>
+        <div class="hand min-hand" ></div>
+        <div class="hand second-hand"  ></div>
+      </div>
+    </div>
+      <div id="time"></div>
+    </div>
+
+    <div class="col-md-3" id="set_interface">
+      <div class="row" id="set_interface1">
+        <div class="col-md-12 set_header">Focus</div>
+        <div class="col-md-4"><i class="fa fa-minus-square hvr-grow" onclick=changeTime(-1,1)></i></div>
+        <div class="col-md-4 text-center" id="Set_WORK"></div>
+        <div class="col-md-4"><i class="fa fa-plus-square hvr-grow" onclick=changeTime(+1,1)></i></div>
+      </div>
+
+      <div class="row" id="set_interface2">
+        <div class="col-md-12 set_header">Relax</div>
+        <div class="col-md-4"><i class="fa fa-minus-square hvr-grow" onclick=changeTime(-1,2)></i></div>
+        <div class="col-md-4" id="Set_REST"></div>
+        <div class="col-md-4"><i class="fa fa-plus-square hvr-grow" onclick=changeTime(+1,2)></i></div>
+      </div>
+    </div>
+
+  </div>
+</div>
